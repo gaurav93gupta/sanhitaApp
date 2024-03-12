@@ -9,7 +9,7 @@
             background-color: #beddf7;
             margin: 0;
             padding: 0;
-		text-align: center;
+			text-align: center;
             
 
             /* background-image: url('BHARAT.png') ;
@@ -33,7 +33,7 @@
             top: 20px;
             left: 20px;
             z-index: 999;
-            display: flex;
+            display: inline-block;
         }
 
         #weight{
@@ -150,29 +150,31 @@
 <body>
 	
     <div id="gaurav">
-        <input type="text" id="search-box" placeholder="Type Keyword to Search section from CrPC.">
+        <input type="text" id="search-box" placeholder="Type Keyword to search Old IEA section">
         <div class="autocomplete-items" id="autocomplete-items"></div>
 		
-   
+    </div>
 
     <div class="container">
         
 
         <div class="panel">
-            <h3>Criminal procedure code to Bhartiya Nagrik Suraksha Samhita,2023</h3>
-        
+            <h3>Criminal Procedure Code to Bhartiya Nagrik Suraksha Sanhita, 2023</h3>
+            
             <form class="grv">
                 <div id="weightInput">
                     <input id="weight" placeholder="Enter CrPC Section...">
                 </div>
                 <button type="button" class="btn" id="mybtn" onclick="calculate()">CLICK</button>
             </form>
-            <h4>Bhartiya Nagrik Suraksha Samhita,2023 Section:</h4>
+            <h4>Bhartiya Nagrik Suraksha Sanhita,2023 Section:</h4>
             <div id="results"></div>
         </div>
     </div>
 
-    <script>
+
+
+   <script>
         const data = [
 
         ' 1: Short title, extent and commencement '  , 
@@ -769,6 +771,7 @@
             }
         });
     </script>
+
 
     <script src="crpc.js"></script>
 </body>
