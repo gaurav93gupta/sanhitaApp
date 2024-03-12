@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sanhita</title>
+</head>
+
+<link rel="stylesheet" href="/css/stylesheet.css">
+
+<body> 
+  <h4>BIHAR POLICE ACADEMY, RAJGIR</h4>
+
+    <div class="container">
+      <!-- Vertical alignment container -->
+      <div class="options-container">
+        <a href="selectoripc.html">
+           <button type="button" class="btn ">Bhartiya Nyay Sanhita</button>
+         </a>
+
+         <a href="fincrpc1.html">
+           <button type="button" class="btn ">Bhartiya Nagrik Suraksha Sanhita</button>
+         </a>
+
+         <a href="finevid.html">
+           <button type="button" class="btn ">Bhartiya Sakshya Adhiniyam</button>
+         </a>
+      </div>
+    </div>
+
+    <!-- Language select submenu -->
+    <div class="lang-menu">
+       <button type="button" class="lang-btn" onclick="toggleLanguageMenu()">Language</button>
+       <div class="lang-dropdown">
+          <a href="#" class="lang-option">English</a>
+          <a href="#" class="lang-option">Hindi</a>
+       </div>
+    </div>
+
+    <style>
+        body {
+            position: relative;
+            margin-top: 50px;
+            background-color: #eef8ff; 
+            background: linear-gradient(to right relative);
+            text-align: center;
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            background-image: url(/img/BHARAT.png);
+            background-position-x: center;
+            background-position-y: -5%;
+            background-repeat: no-repeat;
+            background-blend-mode: color-burn;
+         }
+        
+         .btn {
+            width: 200px;
+            height: 100px;
+            margin: 5px; /* Reduced margin */
+            border: 4px solid rgb(0, 6, 8);
+            border-radius: 40px; 
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+            margin-top: 20px; /* Adjusted top margin */
+            font-weight: bolder;
+            background-color: rgb(2, 110, 241);
+            align-items: center;
+            text-align: center;
+         }
+         
+         .btn:hover {
+            background-color: rgb(3, 60, 125);
+         }
+        
+         .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+         }
+
+         /* Language select submenu styles */
+         .lang-menu {
+            position: absolute;
+            
+         }
+         
+         .lang-btn {
+            background-color: rgb(2, 110, 241);
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+         }
+         
+         .lang-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #f9f9f9;
+            min-width: 50px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            z-index: 1;
+            display: none;
+         }
+         
+         .lang-dropdown a {
+            color: #000;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+         }
+         
+         .lang-dropdown a:hover {
+            background-color: #f1f1f1;
+         }
+         
+         .lang-menu:hover .lang-dropdown {
+            display: block;
+         }
+    </style>
+
+    <script>
+        function toggleLanguageMenu() {
+            var dropdown = document.querySelector('.lang-dropdown');
+            dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
