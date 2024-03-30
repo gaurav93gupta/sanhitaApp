@@ -1,10 +1,10 @@
 
 
 /*  
-Created / coded by : Gaurav Gupta (BPS) , DySP(P) - 66th Batch
+Created / coded by : Gaurav Gupta (BPS) , DySP(P) - 66th Batch and soumyashree behera
 email : gaurav38246@gmail.com
-date : 3 Jan 2024
-place : bihar police academy, Rajgir
+date : 5 Jan 2024
+
 
 */
 
